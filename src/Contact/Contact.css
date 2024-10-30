@@ -1,0 +1,173 @@
+body {
+    background-color: white;
+}
+
+.cardcontact {
+   
+    margin: 50px auto;
+    width: 450px;
+    height: 400px;
+    border-radius: 40px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #aba9a9e6,
+        -20px -20px 60px #ffffff;
+    padding: 30px;
+     
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .cardcontact {
+        width: 90%; /* Full width on smaller screens */
+        height: auto; /* Allow height to adjust automatically */
+        padding: 20px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .cardcontact {
+        border-radius: 20px; /* Smaller border radius for mobile */
+        padding: 15px; /* Further adjust padding */
+    }
+}
+
+
+
+    
+
+/* Input container */
+.input-container {
+    display: -webkit-box;
+    position: relative;
+    margin: 30px ;
+    
+  }
+  
+  /* Input field */
+  .input-field {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+    
+  }
+  
+  /* Input label */
+  .input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: rgba(204, 204, 204, 0);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    
+  }
+  
+  /* Input highlight */
+  .input-highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #007bff;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input field:focus styles */
+  .input-field:focus + .input-label {
+    top: -20px;
+    font-size: 12px;
+    color: #007bff;
+  }
+  
+  .input-field:focus + .input-label + .input-highlight {
+    width: 100%;
+  }
+
+
+  
+.btns {
+   
+    display: flex;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+   margin: 10px auto;
+    cursor: pointer;
+    border-radius: 5em;
+    transition: all 0.2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+    overflow: hidden;
+    
+
+    
+  }
+  
+  .btns:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btns:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btns::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+  
+  .btns::after {
+    background-color: #fff;
+  }
+  
+  .btns:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+
+  @media (max-width: 768px) {
+    .btns {
+      padding: 8px 16px; /* Adjust padding for smaller screens */
+      font-size: 14px; /* Decrease font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .btns {
+      padding: 6px 12px; /* Further adjust padding */
+      font-size: 12px; /* Further decrease font size */
+    }
+  }
+
+  h2{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    background-color: whitesmoke;
+  }
+  
+  

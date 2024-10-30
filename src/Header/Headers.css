@@ -1,0 +1,134 @@
+.navbar{
+    display: flex;
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+
+}
+
+li{
+    margin: 5px 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+li:hover{
+    background-color: lightslategray;
+    border-radius: 7px;
+    transition:1s
+    
+}
+.dropdown{
+    position: relative;
+    margin: 5px 20px;
+    
+}
+
+/*ai*/
+.dropdown-menu {
+  display: none; /* Hide dropdown by default */
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* Show dropdown on hover */
+}
+
+
+
+.d-flex{
+    margin: 5px 20px;
+}
+.dropdown-item{
+    font-size: 15px;
+    padding: 10px;
+
+}
+.dropdown-item:hover{
+    color:aqua
+    
+}
+
+
+
+
+/* carteecss */ 
+.btnn-cartee{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 22px;
+  border-radius: 10px;
+  margin-right: 5%;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  
+}
+
+.btnn-cartee::after {
+  content: attr(data-quantity);
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  font-size: 14px;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s linear;
+  top: 120%;
+}
+
+.icon-cartee{
+  width: 24.38px;
+  height: 35.52px;
+  transition: .2s linear;
+}
+
+
+
+
+
+.btnn-cartee:hover::after {
+  visibility: visible;
+  opacity: 1;
+  top: 110%;
+}
+
+.btnn-cartee:hover{
+  background-color:white
+}
+
+
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: center;
+  }
+  ul {
+      flex-direction: column;
+      width: 100%; /* Full width on mobile */
+  }
+  li {
+      margin: 10px 0;
+      width: 100%; /* Full width for each item */
+      text-align: center; /* Center text */
+  }
+  .dropdown {
+      width: 100%; /* Full width for dropdown */
+  }
+  .dropdown-menu {
+      width: 100%; /* Full width for dropdown menu */
+  }
+}
+
+

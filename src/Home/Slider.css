@@ -1,0 +1,13 @@
+
+.imagees {
+    position: relative;
+
+height: 450px;
+overflow-x: hidden;
+overflow-y: hidden;
+background-position: center;
+background-size: cover;
+
+    
+
+}
