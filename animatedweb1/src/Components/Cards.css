@@ -1,0 +1,40 @@
+
+.card {
+	-webkit-animation: scale-down-top 0.8s cubic-bezier(0.165, 0.840, 0.440, 1.000) reverse backwards;
+	        animation: scale-down-top 0.8s cubic-bezier(0.165, 0.840, 0.440, 1.000) reverse backwards;
+}
+
+/**
+ * ----------------------------------------
+ * animation scale-down-top
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-down-top {
+    0% {
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+    100% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+  }
+  @keyframes scale-down-top {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+    100% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+  }
+  
