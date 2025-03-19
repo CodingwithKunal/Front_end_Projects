@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+.phone_screen {
+    height: 650px;
+    width: 320px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    position: relative;
+
+}
+
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: black;
+
+}
+
+/* Left Section (Logo and Dropdown Icon) */
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    /* Space between logo and dropdown icon */
+
+}
+
+/* Instagram Logo */
+.logo {
+    font-family: 'Lobster', 'cursive';
+    font-size: 24px;
+    color: white;
+}
+
+/* Dropdown Icon */
+.dropdown-icon {
+    margin-top: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.dropdown-menu {
+    display: none;
+    /* Hide the dropdown by default */
+    position: absolute;
+    background-color: hsla(0, 0%, 0%, 0.566);
+    /* Dark background */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: medium;
+
+}
+
+li i {
+    padding: 0 10px;
+}
+
+.dropdown-menu.show {
+    display: block;
+    /* Show the dropdown when this class is added */
+
+}
+
+/* Right Section (Heart and Messenger Icons) */
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* Space between icons */
+}
+
+/* Heart and Messenger Icons */
+.herarts,
+.messeg {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+
+
+/* Story Sectione */
+
+.story_section {
+
+    height: 100px;
+    width: 100%;
+    /* background-color: rgb(53, 182, 119); */
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+
+
+}
+
+/* Story for Image */
+.stories {
+
+    width: 81px;
+    height: 81px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    display: inline-flex;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.stories img {
+
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 5px solid black;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+/* Scroll bar hidden */
+.story_section::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+
+/* Here we show larg photo when we click on story */
+
+.story_container {
+    height: 100%;
+    width: 100%;
+    /* background-color: hsl(232, 100%, 50%); */
+    position: absolute;
+    display: none;
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* Ai */
+.top_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    color: white;
+}
+
+/* Left: Profile & Name Ai */
+.left {
+    display: flex;
+    align-items: center;
+}
+
+
+.small_story {
+    height: 40px;
+    width: 40px;
+    /* background-color: red; */
+    border-radius: 50%;
+    margin: 10px 10px;
+    /* display: inline-block; Ensures it stays inline */
+    /* vertical-align: middle; Aligns it with the text */
+
+}
+
+
+.small_story img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+
+}
+
+h5 {
+
+    /* display: inline-block; Keeps the heading inline */
+    /* vertical-align: middle; Aligns it properly */
+    color: white;
+
+    margin: 0;
+    font-size: 15px;
+
+}
+
+
+/* Right: Icons */
+.right {
+    display: flex;
+    gap: 15px;
+}
+
+.right i {
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* Insta  Photo section */
+
+.insta_images {
+    height: 55%;
+    width: 100%;
+    background-image: url("https://wallpaper.forfun.com/fetch/27/27a6eea232e18d7a5dab3ef90ae9974b.jpeg");
+    margin-top: 20px;
+    padding: 8px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.insta_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.insta_left {
+
+    display: flex;
+}
+
+/* Insta a Dp photo  */
+.insta_image {
+    height: 38px;
+    width: 38px;
+    /* background-color: #bc1888; */
+    border-radius: 50%;
+
+}
+
+.insta_image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.insta_left h5 {
+
+    font-size: 10px;
+    text-transform: lowercase;
+    margin-left: 5px;
+}
+
+.inst_right_icon i {
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+/* Here we put insta buttons */
+.insta_bottom_btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Left btn */
+.insta_btn_left {
+    display: flex;
+    gap: 15px;
+}
+
+.insta_btn_left i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.heart i {
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.heart:active {
+    transform: scale(1.2);
+}
+
+
+/* right btn  */
+.save-btn {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    
+}
+
+.save_btn i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+h6 {
+    font-size: 10px;
+    color: gray;
+    margin: 0 15px;
+}
+
+
+/* Insta photo Love */
+
+.insta_photo_container i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)  scale(0);
+    font-size: 55px;
+    transition: ease-out, transform 0.3s ease-out;
+   
+}
+
+
+
+
+
+
+/* Bottom Tages */
+.bottom_icons {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.bottom_icons i {
+    font-size: 23px;
+    margin-top: 18px;
+}
+.bottom_dp{
+    background-color: rgb(236, 65, 65);
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    margin-top: 18px;
+}
+.bottom_dp img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
