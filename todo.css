@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* full body color */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(134deg, #4fe79b, skyblue);
+    padding: 20px;
+
+}
+
+/* To-Do box  */
+.to-do {
+    width: 100%;
+    border-radius: 10px;
+    margin: 100px auto 20px;
+    background-color: white;
+    padding: 40px 30px 70px;
+    max-width: 540px;
+
+}
+
+.to-do h2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.to-do img {
+    width: 40px;
+    margin-left: 10px;
+}
+
+/* To-Do background input Size */
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hwb(0 82% 10%);
+    border-radius: 40px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+
+}
+
+.row input {
+    flex: 1;
+    /* width: 100%; */
+    border: none;
+    padding: 7px;
+    background-color: transparent;
+    outline: none;
+    font-weight: 15px;
+}
+
+.row button {
+    background-color: #f7b53b;
+    color: white;
+    font-size: 15px;
+    border-radius: 40px;
+    padding: 16px 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Task list */
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    position: relative;
+    /* user-select: none; */
+}
+
+/* Circle checked */
+ul li::before {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW3CXa4BBQVUSe3c5mC_tVadfK0npCDTUpQw&s");
+    background-position: center;
+    background-size: cover;
+    top: 10px;
+    left: 10px;
+
+}
+
+/* Line checked line through */
+ul li.checked {
+    color: black;
+    text-decoration: line-through;
+}
+
+/* Before circle check png */
+ul li.checked::before {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpQQgirDgL8E8OLm1Xqch_vIkoeANxGu91zw&s");
+
+}
+
+/* scross Css */
+ul li span img {
+    position: absolute;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+
+}
+ul li p {
+     display: inline-block;
+    color: gray;
+    font-size: 0.75rem; /* More scalable than x-small */
+    margin: 5px 0; /* Adjust margins for better spacing */
+    padding-left: 15px; /* Adds space instead of large margin */
+    line-height: 1; /* Improves readability */
+}
+
+ul li span :hover:active {
+    background: rgb(206, 196, 196);
+}
