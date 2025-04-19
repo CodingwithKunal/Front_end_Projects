@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+h1{
+  font-size: 40px;
+  margin: 20px 0px 30px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+form{
+  /* width:100%;
+  height:80%;
+  padding:10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #353434; */
+  color: white;
+}
+
+
+
+
+input{
+  width: 80%;
+  height: 50px;
+  font-size: 20px;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  font-weight: 400;
+ 
+}
+button{
+  width: 15%;
+  height: 40px ;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0;  
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+ol li{
+  margin-left: 17px;
+  width: 95%;
+  cursor: pointer;
+  padding: 6px;
+   margin-top: 15px;
+   /* background-color: hsla(0, 0%, 0%, 0.251); */
+   border-radius: 6px;
+   position: relative;
+   background-color: #353434
+}
+ span{
+  font-size: 20px;
+  right:0;
+  padding-right: 10px;
+  position: absolute;
+  font-size: 25px;
+}
+
+.completedtask{
+  text-decoration: line-through;
+  color: red;
+
+}
+small{
+  margin:0 60px;
+}
