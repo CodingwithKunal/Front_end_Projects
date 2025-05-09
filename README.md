@@ -9,6 +9,3 @@ This project demonstrates a responsive design created using Bootstrap 5. It incl
 - Clean and modern UI
 
 
-## 🌐 Live Demos
-
-[Bootstrap Design Project]  (https://codingwithkunal.github.io/Front_end_Projects/)
