@@ -1,5 +1,5 @@
 import React from 'react'
-import './Home.css';
+import './style.css';
 import { useGSAP } from '@gsap/react'
 import { gsap } from 'gsap';
 import SplitType from 'split-type';
