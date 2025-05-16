@@ -33,7 +33,7 @@ I'm Kunal Verma, an enthusiastic and results-driven Frontend Developer passionat
 2. **🎨 Minor Animated Frontend Website**
    - Focused on GSAP animations and smooth user experiences with dynamic responsive design.
 
-(Include more project folders as you add them!)
+(Include more project go and check them !)
 
 ---
 
