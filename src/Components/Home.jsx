@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
-import "./Home.css"
+import "./style.css"
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react'
 
