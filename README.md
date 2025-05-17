@@ -1,6 +1,6 @@
-# Frontend Practice Lab
+# Frontend Practice Hub
 
-Welcome to my **Frontend Practice Lab**! 🧪  
+Welcome to my **Frontend Practice Hub**! 🧪  
 This repository contains my learning-based, experimental, and revision codes for various frontend technologies. It serves as my personal coding playground to improve, revise, and solidify my frontend development skills.
 
 ## 📚 Purpose
